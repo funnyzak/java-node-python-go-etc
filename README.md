@@ -2,9 +2,6 @@
 
 [![Docker Stars](https://img.shields.io/docker/stars/funnyzak/java-node-python-go-etc.svg?style=flat-square)](https://hub.docker.com/r/funnyzak/java-node-python-go-etc/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/funnyzak/java-node-python-go-etc.svg?style=flat-square)](https://hub.docker.com/r/funnyzak/java-node-python-go-etc/)
-
-Download size of this image is only:
-
 [![Image Size](https://img.shields.io/docker/image-size/funnyzak/java-node-python-go-etc)](https://hub.docker.com/r/funnyzak/java-node-python-go-etc/)
 
 [Docker hub image: funnyzak/java-node-python-go-etc](https://hub.docker.com/r/funnyzak/java-node-python-go-etc)
