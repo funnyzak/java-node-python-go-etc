@@ -9,12 +9,14 @@ ENV TZ Asia/Shanghai
 LABEL org.label-schema.vendor="potato<silenceace@gmail.com>" \
     org.label-schema.name="java-node-python-go-etc" \
     org.label-schema.build-date="${BUILD_DATE}" \
-    org.label-schema.description="Java8 mvn3.3.9 Go1.16.7 python3.6.8 node10.24.0 npm8.1.4 yarn1.22.17 nginx1.14 openssh zip tar wget rsync git bash webhook" \
+    org.label-schema.description="Java8 mvn3.3.9 Go1.16.7 python3.6.8 node10.24.0 npm8.1.4 yarn1.22.17 nginx1.21 openssh zip tar wget rsync git bash webhook" \
     org.label-schema.url="https://yycc.me" \
     org.label-schema.schema-version="1.0"	\
     org.label-schema.vcs-type="Git" \
     org.label-schema.vcs-ref="${VCS_REF}" \
     org.label-schema.vcs-url="https://github.com/funnyzak/java-node-python-go-etc" 
+
+COPY ./repo/* /etc/yum.repos.d/
 
 # base soft
 RUN yum update -y

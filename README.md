@@ -46,6 +46,21 @@ Docker Pull Command: `docker pull funnyzak/java-node-python-go-etc`
 ### Nginx Run
 
 ```Docker
-docker run -d -t -i --name nginx --restart always --privileged=true \
+docker run -d -t -i --name jnpge --restart always --privileged=true \
 -p 81:80 funnyzak/java-node-python-go-etc nginx -g 'daemon off;'
+```
+
+### Install Modules
+
+```bash
+# mysql 
+docker exec jnpge yum install mysql.x86_64
+
+# install node
+# n latest
+# n 10.23.1
+# n 12.22.7
+# n 14.18.2
+# n 16.13.1
+docker exec jnpge n latest
 ```
