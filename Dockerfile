@@ -45,6 +45,11 @@ RUN curl -Lo /mnt/app/ossutil64 http://gosspublic.alicdn.com/ossutil/${OSSUTIL_V
 RUN chmod 755 /mnt/app/ossutil64
 RUN ln -s /mnt/app/ossutil64 /usr/local/bin
 
+# Go config
+RUN mkdir -p /go/src /go/bin && chmod -R 777 /go
+ENV GOPATH /go
+ENV PATH /go/bin:$PATH
+
 # Install Go Webhook
 RUN go get github.com/adnanh/webhook
 
