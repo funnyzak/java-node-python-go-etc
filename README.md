@@ -61,3 +61,13 @@ docker exec jnpge yum install mysql.x86_64
 # n 16.13.1
 docker exec jnpge n latest
 ```
+
+### Set Modeules
+
+```bash
+# ossutil64 set
+ossutil64 config -e ${ALIYUN_OSS_ENDPOINT} -i ${ALIYUN_OSS_AK_ID} -k ${ALIYUN_OSS_AK_SID} -L CH
+
+# osutils64 sync
+ossutil64 sync -f /app/package/  oss://bucket-name/app/package/
+```
